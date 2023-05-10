@@ -1,51 +1,235 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
-	font-family: Arial, sans-serif;
-	margin: 0;
+  font-family: Arial, sans-serif;
 }
-
+h1, h2 {
+  text-align: center;
+  margin: 2rem 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+/* Estilos de encabezado */
 header {
-	background-color: #333;
-	color: #fff;
-	padding: 20px;
+  background-color: transparent;  
+  color: black;
+  padding: 1rem;
 }
-
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
 nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
-
 nav li {
-	display: inline-block;
-	margin-right: 20px;
+  margin: 0 1rem;
 }
-
 nav a {
-	color: #fff;
-	text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-
+.menu1{
+  color: black;
+  transition: color 0.3s;
+}
+.menu1:hover{
+  color: Gold;
+}
+.menu2{
+  color: black;
+  transition: color 0.3s;
+}
+.menu2:hover{
+  color:Orange;
+}
+.menu3{
+  color: black;
+  transition: color 0.3s;
+}
+.menu3:hover{
+  color: DarkOrange;
+}.menu4{
+  color: black;
+  transition: color 0.3s;
+}
+.menu4:hover{
+  color: OrangeRed;
+}
+/* Estilos de secciones */
 section {
-	padding: 50px;
+  padding: 2rem;
 }
-
+section#about {
+  background-color: transparent;
+}
+.imagen-section1 {
+  float: right; /* Ubica la imagen al lado derecho */
+  margin-left: 10px; /* Añade un margen izquierdo para separarla del texto */
+  width: 280px; /* Cambia el valor según el tamaño deseado */
+  height: auto;
+  margin-top: 20px;
+}
+section#about p{
+  margin-top: 50px;
+  font-size: 19px;
+  margin-left: 30px;
+  font-weight: 300;
+}
+.imagen-section6 {
+  float: left; /* Ubica la imagen al lado derecho */
+  margin-left: 10px; /* Añade un margen izquierdo para separarla del texto */
+  width: 280px; /* Cambia el valor según el tamaño deseado */
+  height: auto;
+}
+.parrafo {
+  opacity: 0; /* Oculta el párrafo inicialmente */
+  animation: aparecer 2s ease forwards; /* Aplica la animación */
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0; /* El párrafo está oculto al inicio */
+  }
+  100% {
+    opacity: 1; /* El párrafo se muestra completamente al final */
+  }
+}
+section#skills {
+  background-color: transparent;
+}
+.dos-columnas{
+  columns: 2;
+  -webkit-columns: 2;
+}
+.dos-columnas {
+  opacity: 0; /* Oculta el párrafo inicialmente */
+  animation: aparecer 2s ease forwards; /* Aplica la animación */
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0; /* El párrafo está oculto al inicio */
+  }
+  100% {
+    opacity: 1; /* El párrafo se muestra completamente al final */
+  }
+}
+.list{
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: 40px;
+}
+.list i{
+  font-size: 35px;
+  margin-right: 20px;
+  color: Gold;
+  transition: color 0.3s;
+}
+.list i:hover{
+color: black;
+}
+.imagen-section2{
+  width: 300px; /* Cambia el valor según el tamaño deseado */
+  height: auto; /* Mantiene la proporción de la imagen */
+  overflow: auto; /* Para que el contenedor se expanda y contenga la imagen y la lista */
+  float: left; /* Alineamos la imagen a la izquierda */
+  margin-right: 10px; /* Espacio entre la imagen y la lista */
+  margin-bottom: 30px;
+}
+.imagen-section5 {
+  float: right; /* Ubica la imagen al lado derecho */
+  margin-left: 10px; /* Añade un margen izquierdo para separarla del texto */
+  width: 280px; /* Cambia el valor según el tamaño deseado */
+  height: auto;
+}
+section#portafolio {
+  background-color: transparent;
+}
+.parrafo1 {
+  opacity: 0; /* Oculta el párrafo inicialmente */
+  animation: aparecer 2s ease forwards; /* Aplica la animación */
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+.imagen-section4 {
+  float: left; /* Ubica la imagen al lado derecho */
+  margin-left: 0px; /* Añade un margen izquierdo para separarla del texto */
+  width: 220px; /* Cambia el valor según el tamaño deseado */
+  height: auto;
+}
+section#contact {
+  background-color:transparent;
+}
 section h2 {
-	margin-top: 0;
+  font-size:30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+ul li {
+  margin-bottom: 1rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+  margin-right: 200px ;
+}
+.imagen-section3 {
+  float: right; /* Ubica la imagen al lado derecho */
+  margin-left: 0px; /* Añade un margen izquierdo para separarla del texto */
+  width: 280px; /* Cambia el valor según el tamaño deseado */
+  height: auto;
 }
 
-form label {
-	display: block;
-	margin-bottom: 5px;
+label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
-form input, form textarea {
-	display: block;
-	margin-bottom: 10px;
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #616161;
+  background-color: #f9f9f9;
 }
 
-form input[type="submit"] {
-	background-color: #333;
-	border: none;
-	color: #fff;
-	padding: 10px 20px;
+button[type="submit"] {
+  background-color: #f9f9f9;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s;
 }
+button:hover{
+color: gold;
+}
+.parra{
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+}
+
