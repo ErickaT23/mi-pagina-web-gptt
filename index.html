@@ -1,50 +1,77 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Mi página web</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<header>
-		<h1>Bienvenido a mi página web</h1>
-		<nav>
-			<ul>
-				<li><a href="#inicio">Inicio</a></li>
-				<li><a href="#servicios">Servicios</a></li>
-				<li><a href="#testimonios">Testimonios</a></li>
-				<li><a href="#contacto">Contacto</a></li>
-			</ul>
-		</nav>
-	</header>
-
-	<section id="inicio">
-		<h2>Sección de inicio</h2>
-		<p>Esta es la sección de inicio de mi página web.</p>
-	</section>
-
-	<section id="servicios">
-		<h2>Nuestros servicios</h2>
-		<p>Aquí puedes ver los servicios que ofrecemos.</p>
-	</section>
-
-	<section id="testimonios">
-		<h2>Testimonios de clientes</h2>
-		<p>Lee lo que nuestros clientes tienen que decir.</p>
-	</section>
-
-	<section id="contacto">
-		<h2>Contáctanos</h2>
-		<form>
-			<label for="nombre">Nombre:</label>
-				<input type="text" id="nombre" name="nombre"><br>
-			<label for="correo">Correo electrónico:</label>
-				<input type="email" id="correo" name="correo"><br>
-			<label for="mensaje">Mensaje:</label><br>
-				<textarea id="mensaje" name="mensaje"></textarea><br>
-			<input type="submit" value="Enviar">
-		</form>
-	</section>
-
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/8435ad2454.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <h1> </h1>
+      <nav>
+        <ul>
+          <li><a href="#about" class="menu1">Acerca de mí</a></li>
+          <li><a href="#skills" class="menu2">Habilidades</a></li>
+          <li><a href="#portfolio" class="menu3">Portafolio</a></li>
+          <li><a href="#contact" class="menu4">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <section id="about">
+		<img src="imagenes/4.png" alt="imagen 6" class="imagen-section6">
+        <h2 class="titulo1">Acerca de mí</h2>
+        <p class="parrafo">Hola, soy una diseñadora digital y desarrolladora frontend apasionada por la creación de sitios web atractivos y funcionales. 
+			<img src="imagenes/5.png" alt="imagen 1" class="imagen-section1">
+			Me especializo en HTML, CSS y herramientas de no-code como Wix, WordPress y Shopify. 
+			Con experiencia en el desarrollo de páginas web interactivas y proyectos creativos, he utilizado mis habilidades para ayudar
+			a empresas a mejorar su presencia en línea. Además, he completado cursos de diseño web y desarrollo para seguir mejorando mis habilidades.
+			Estoy emocionada de seguir creando diseños digitales innovadores y estoy disponible para nuevos proyectos de desarrollo web.</p>
+      </section>
+      
+      <section id="skills">
+        <h2>Habilidades</h2>
+		<img src="imagenes/6.png" alt="imagen 2" class="imagen-section2">
+        <ul class="dos-columnas">
+          <li class="list"><i class="fa-solid fa-palette"></i>Diseño web</li>
+          <li class="list"><i class="fa-solid fa-wand-magic-sparkles"></i>Desarrollo frontend</li>
+          <li class="list"><i class="fa-brands fa-html5"></i>HTML</li>
+          <li class="list"><i class="fa-brands fa-css3-alt"></i>CSS</li>
+          <li class="list"><i class="fa-brands fa-wix"></i>Wix</li>
+          <li class="list"><i class="fa-brands fa-wordpress-simple"></i>WordPress </li>
+          <li class="list"><i class="fa-brands fa-shopify"></i>Shopify</li>
+        </ul>
+		<img src="imagenes/2.png" alt="imagen 5" class="imagen-section5">
+      </section>
+      
+      <section id="portafolio">
+        <h2>Portafolio</h2>
+        <p class="parrafo1">Próximamente...</p>
+		<img src="imagenes/3.png" alt="imagen 4" class="imagen-section4">
+      </section>
+      
+      <section id="contact">
+        <h2>Contacto</h2>
+        <form action="send-email.php" method="POST">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" required></textarea>
+          
+          <button type="submit">Enviar</button>
+        </form>
+		<img src="imagenes/1.png" alt="imagen 3" class="imagen-section3">
+      </section>
+    </main>
+    
+    <footer>
+      <p class="parra">Derechos reservados &copy; 2023 - Ericka Tuchán</p>
+    </footer>
+  </body>
 </html>
